@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscrição Torneio de Jiu-Jitsu</title>
+  <link rel="stylesheet" href="inscricao.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Inscrição </h2>
+    <form action="/cadastro" method="POST">
+      
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="data_nascimento">Data de Nascimento</label>
+      <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+      <label for="faixa">Faixa</label>
+      <select id="faixa" name="faixa" required>
+        <option value="">Selecione sua faixa</option>
+        <option>Branca</option>
+        <option>Azul</option>
+        <option>Roxa</option>
+        <option>Marrom</option>
+        <option>Preta</option>
+      </select>
+
+      <label for="categoria">Categoria de Peso</label>
+      <select id="categoria" name="categoria" required>
+        <option value="">Selecione a categoria</option>
+        <option>Galo (-57kg)</option>
+        <option>Pluma (-64kg)</option>
+        <option>Pena (-70kg)</option>
+        <option>Leve (-76kg)</option>
+        <option>Médio (-82kg)</option>
+        <option>Meio-Pesado (-88kg)</option>
+        <option>Pesado (-94kg)</option>
+        <option>Super-Pesado (-100kg)</option>
+        <option>Pesadíssimo (+100kg)</option>
+      </select>
+
+      <label for="sexo">Sexo</label>
+      <select id="sexo" name="sexo" required>
+        <option value="">Selecione</option>
+        <option>Masculino</option>
+        <option>Feminino</option>
+      </select>
+
+      <label for="academia">Nome da Academia</label>
+      <input type="text" id="academia" name="academia" required>
+
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" name="cidade" required>
+
+      <label for="estado">Estado</label>
+      <select id="estado" name="estado" required>
+        <option value="">Selecione o estado</option>
+        <option>AC</option>
+        <option>AL</option>
+        <option>AP</option>
+        <option>AM</option>
+        <option>BA</option>
+        <option>CE</option>
+        <option>DF</option>
+        <option>ES</option>
+        <option>GO</option>
+        <option>MA</option>
+        <option>MT</option>
+        <option>MS</option>
+        <option>MG</option>
+        <option>PA</option>
+        <option>PB</option>
+        <option>PR</option>
+        <option>PE</option>
+        <option>PI</option>
+        <option>RJ</option>
+        <option>RN</option>
+        <option>RS</option>
+        <option>RO</option>
+        <option>RR</option>
+        <option>SC</option>
+        <option>SP</option>
+        <option>SE</option>
+        <option>TO</option>
+      </select>
+
+      <button type="submit">Finalizar Inscrição</button>
+    </form>
+  </div>
+
+</body>
+</html>
